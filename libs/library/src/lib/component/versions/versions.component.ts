@@ -3,17 +3,17 @@ import { CommonModule } from '@angular/common';
 import { BadgeModule } from 'primeng/badge';
 import { ButtonModule  } from 'primeng/button';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
-import { HttpClientModule } from '@angular/common/http';
-
+import { VersionServerService } from '../../version-server.service';
 @Component({
   selector: 'version-component-versions',
   standalone: true,
-  imports: [CommonModule , BadgeModule   ,ButtonModule , OverlayPanelModule , HttpClientModule ],
+  imports: [CommonModule , BadgeModule   ,ButtonModule , OverlayPanelModule   ],
   templateUrl: './versions.component.html',
   styleUrls: ['./versions.component.scss'],
 })
 export class VersionsComponent {
   
+
   visible = false; 
   private _serverVersion="0.0.0.0";
   private _clientVersion="0.0.0.0";

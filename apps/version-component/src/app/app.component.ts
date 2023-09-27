@@ -1,9 +1,10 @@
+/* eslint-disable @nx/enforce-module-boundaries */
 import { Component } from '@angular/core';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { VersionsComponent } from 'libs/library/src/lib/component/versions/versions.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent],
+  imports: [AppComponent , VersionsComponent   ],
   selector: 'version-component-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

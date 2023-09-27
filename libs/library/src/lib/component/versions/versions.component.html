@@ -1,0 +1,11 @@
+<p-overlayPanel #op>
+    <p>La version Client et  la version du Serveur sont différentes ! Version client :{{clientVersion}} / Version Serveur : {{serverVersion}}</p>
+</p-overlayPanel>
+
+
+<div >
+    
+    <p-badge value="!" severity="danger" (click)="op.toggle($event)" class="badgeVersion" id="badgeVersion"> </p-badge>
+ 
+    {{version}}
+</div>

@@ -1,0 +1,16 @@
+:host{
+
+    div{
+        background:var(--version_background, var(--theme_background,black));
+        color:var(--version_color, var(--theme_color, white));
+        padding:var(--version_padding, var(--theme_padding, .5rem 1rem));
+        border-radius:var(--version_border-radius, var(--theme_border-radius,1rem));
+        position: absolute;
+        right: 0.5vw;
+        bottom: 0.5VW;
+    }
+    .badgeVersion{
+        display: none;
+    }
+    
+}

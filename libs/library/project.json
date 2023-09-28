@@ -2,7 +2,7 @@
   "name": "library",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/library/src",
-  "prefix": "version-component",
+  "prefix": "beconfig-common",
   "tags": [],
   "projectType": "library",
   "targets": {

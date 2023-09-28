@@ -1,16 +1,16 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient, } from '@angular/common/http';
+import { Injectable, } from '@angular/core';
+import { Observable, } from 'rxjs';
 
-@Injectable({
+@Injectable({  
   providedIn: 'root'
  })
 export class VersionServerService {
-  constructor(private http:HttpClient) { }
+  constructor(private httpClient:HttpClient) { }
 
-  getUrl():Observable<any> {
+  getUrl():Observable<string> {
     const url="https://planning.beconfig-apps.com/api/versions/server";
-    return this.http.get(url);
-    }
+    return this.httpClient.get<string>(url);
+  }
 
 }

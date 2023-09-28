@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "version-component",
+            "prefix": "beconfig-common",
             "style": "kebab-case"
           }
         ]

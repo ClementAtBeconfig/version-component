@@ -15,6 +15,10 @@ export class AppComponent {
   constructor(private versionService:VersionServerService ){
  
   }
+
+  public handleRefresh(){
+    document.location.reload();
+  }
 }
 
 

@@ -56,7 +56,8 @@
           "browserTarget": "version-component:build:production"
         },
         "development": {
-          "browserTarget": "version-component:build:development"
+          "browserTarget": "version-component:build:development",
+          "port":4800
         }
       },
       "defaultConfiguration": "development"

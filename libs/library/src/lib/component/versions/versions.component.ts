@@ -1,13 +1,16 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { BadgeModule } from 'primeng/badge';
-import { ButtonModule  } from 'primeng/button';
-import { OverlayPanelModule } from 'primeng/overlaypanel';
-import { VersionServerService } from '../../version-server.service';
+import { BadgeModule, } from 'primeng/badge';
+import { ButtonModule, } from 'primeng/button';
+import { CommonModule, } from '@angular/common';
+import {
+    Component,
+    Input,
+} from '@angular/core';
+import { OverlayPanelModule, } from 'primeng/overlaypanel';
+
 @Component({
   selector: 'version-component-versions',
   standalone: true,
-  imports: [CommonModule , BadgeModule   ,ButtonModule , OverlayPanelModule   ],
+  imports: [CommonModule , BadgeModule   ,ButtonModule , OverlayPanelModule],
   templateUrl: './versions.component.html',
   styleUrls: ['./versions.component.scss'],
 })
@@ -15,9 +18,11 @@ export class VersionsComponent {
   
 
   visible = false; 
+  
   private _serverVersion="0.0.0.0";
   private _clientVersion="0.0.0.0";
   private _version ="0.0.0.0";
+
   @Input()
   public get serverVersion(){
     return this._serverVersion;
